@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,18 +20,18 @@ class MainActivity : AppCompatActivity() {
         val button_divide = findViewById(R.id.button_divide) as Button
 
         button_add.setOnClickListener(View.OnClickListener {
-            view -> result.text = if(getNum2().equals(-1) || getNum2().equals(-1))"Either of the values Cannot be empty" else (getNum1() + getNum2()).toString()
+            view -> result.text = if(getNum1().equals(-1) || getNum2().equals(-1))"Either of the values Cannot be empty" else (getNum1() + getNum2()).toString()
         })
 
         button_minus.setOnClickListener(View.OnClickListener {
-            view -> result.text = if(getNum2().equals(-1) || getNum2().equals(-1))"Either of the values Cannot be empty" else (getNum1() - getNum2()).toString()
+            view -> result.text = if(getNum1().equals(-1) || getNum2().equals(-1))"Either of the values Cannot be empty" else (getNum1() - getNum2()).toString()
         })
 
         button_multiply.setOnClickListener(View.OnClickListener {
-            view -> result.text = if(getNum2().equals(-1) || getNum2().equals(-1))"Either of the values Cannot be empty" else (getNum1() * getNum2()).toString()
+            view -> result.text = if(getNum1().equals(-1) || getNum2().equals(-1))"Either of the values Cannot be empty" else (getNum1() * getNum2()).toString()
         })
         button_divide.setOnClickListener(View.OnClickListener {
-            view -> result.text = if(getNum2().equals(-1) || getNum2().equals(-1))"Either of the values Cannot be empty" else if(getNum2() == 0) "Error\nDivisible By Zero" else ((getNum1() / getNum2()).toString())
+            view -> result.text = if(getNum1().equals(-1) || getNum2().equals(-1))"Either of the values Cannot be empty" else if(getNum2() == 0) "Error\nDivisible By Zero" else ((getNum1() / getNum2()).toString())
 
         })
 
