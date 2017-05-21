@@ -6,6 +6,7 @@
     android:paddingBottom="10dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
+    android:id="@+id/mainlinearlayout"
     android:paddingTop="10dp"
     tools:context="com.yogeshojha.calculator.MainActivity">
 
